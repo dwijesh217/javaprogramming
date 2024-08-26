@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class PerfectNumbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the value of N:");
+        int n = input.nextInt();
+        int count = 0;
+        int num = 1;
+        System.out.println("First " + n + " perfect numbers are:");
+        while (count < n) {
+            if (isPerfect(num)) {
+                System.out.print(num + " ");
+                count++;
+            }
+            num++;
+        }
+        input.close();
+    }
+    public static boolean isPerfect(int num) {
+        int sum = 1; 
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                sum += i;
+            }
+        }
+        return sum == num && num != 1;
+    }
+}
