@@ -31,3 +31,6 @@ public class R192211726 {
         }
     }
 }
+
+OUTPUT:
+1 2 2 3 5 6
