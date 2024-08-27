@@ -22,3 +22,5 @@ public class R192211726 {
         System.out.println("The Roman numeral for " + number + " is: " + romanNumeral);
     }
 }
+OUTPUT:
+The Roman numeral for 1994 is: MCMXCIV
