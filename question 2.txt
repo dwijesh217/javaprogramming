@@ -38,3 +38,8 @@ public class R192211726 {
         return original == reversed;
     }
 }
+
+
+OUTPUT:
+Enter an integer:23432
+Output: true
